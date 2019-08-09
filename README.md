@@ -197,9 +197,9 @@ puedas haber encontrado en el camino.
 
 * [✔ ] Muestra _muro_, o lista de publicaciones.
 * [✔] Permite hacer nuevas publicaciones.
-* [ ] Permite eliminar publicaciones.
+* [✔] Permite eliminar publicaciones.
 * [ ] Pide confirmación antes de borrar publicación.
-* [ ] Permite editar publicación en el mismo lugar (in place).
+* [✔] Permite editar publicación en el mismo lugar (in place).
 * [ ] Permite filtrar publicaciones por público/privado.
 * [ ] Permite marcar publicaciones como _gustados_ (like, corazón, estrella,
   etc...).
