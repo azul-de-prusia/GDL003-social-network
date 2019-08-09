@@ -1,102 +1,71 @@
-# Creando una Red Social
-
-## Preámbulo
-
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
-sociales han invadido nuestras vidas. Las amamos y/u odiamos, y muchos no podemos vivir sin ellas.
-
-Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
-en una ronda de financiamiento con inversionistas, se presentó una red social
-para químicos en la que los usuarios podían publicar artículos sobre sus
-investigaciones, comentar en los artículos de sus colegas, y filtrar artículos
-de acuerdo a determinadas etiquetas o su popularidad, lo más reciente, o lo
-más comentado.
+# Creando una Red Social. Uniapp
 
 ## Introducción
 
-Una emprendedora nos ha encargado crear una red social. No nos da mucho detalle
-sobre qué tipo de red social quiere, sólo nos dice que creemos la mejor que
-podamos, y que luego la convenzamos de lanzarla al mercado. Nos da ciertos temas
-en los que le gustaría invertir:
+El tema elegido para este proyecto es la educación superior, creamos una red social para el uso de los integrantes de una comunidad universitaria de educación privada. 
+La idea principal es generar una plataforma donde se facilite la comunicación entre los miembros de la comunidad sin tener que hacer uso de las redes de mensajería personal como Whatsapp, y así poder estar en contacto para temas académicos, administrativos y de difusión. 
+La app será gratuita y se fomentará su uso para tenerla como el canal de comunicación en la universidad.
 
-* Alimentación
-* Feminismo
-* Educación
-* Salud
-* Energías Renovables
-* o la idea que mejor les parezca
-
-## Objetivos de Aprendizaje
-
-El objetivo principal de aprendizaje de este proyecto es construir una Red Social
-[_responsive_](https://github.com/Laboratoria/curricula-js/tree/master/topics/css/02-responsive)
- en la que podamos **leer y escribir datos.**
-
-Dicho en palabras sencillas, aprenderás a:
-
-* Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
-* Entender las necesidades de los usuarios para los que crearás el producto y
-  que ayudarás a resolver.
-* Poner en juego tu creatividad para generar ideas que lleven a una solución
-  original y valiosa del problema.
-* Contar con el apoyo de tus compañeras, debes trabajar en equipo buscando
-  _feedback_ constante.
-* Definir como crear la estructura de tu propia data y de qué forma mostrarla en
-  el producto.
 
 ## Consideraciones generales
 
-Este proyecto se debe "resolver" en tríos.
+Este proyecto se resolvío en un equipo formado por Karina Cabrera, Laura Maya y Coral Quiñones.
 
-La lógica del proyecto debe estar implementada completamente en JavaScript (ES6),
-HTML y CSS :smiley:. Para este proyecto no está permitido utilizar
-frameworks de JS.
-
-Para comenzar tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
-
-## Avances Esperados
-
-### General
-
-En este proyecto, tú junto a tus compañeras de equipo deberán definir los
-_tests_ que consideren necesarios; puedes guiarte de los proyectos
-anteriores. Igualmente el proyecto cuenta con una estructura de carpetas
-y archivos ya definida pero pueden modificarla de acuerdo a como desean
-trabajar la estructura de su proyecto :smiley:.
+La lógica del proyecto está implementada completamente en JavaScript (ES6),
+HTML y CSS. Sin utilización de frameworks de JS. Es de desarrollo mobile first.
 
 ### Definición del producto
 
-En el `README.md` colocar cómo conociste el mercado de las redes sociales, cómo
-descubriste las necesidades de los usuarios, cómo llegaste a la definición final
-de tu producto. Si tienes fotos de entrevistas, cuestionarios y/o sketches
-(bocetos) compártelos. Es importante que detalles:
+De acuerdo a nuestra experiencia las redes sociales cumplen la función de conectar personas, creando redes donde pueden interactuar con otros usuarios de manera directa, publicar y compartir información.
+Generalmente estas redes están enfocadas en un objetivo específico en función de lo que desean compartir, por ejemplo imágenes y videos en el caso de Instagram, mensajería en Whatsapp, etc.
 
-* Cuáles son los elementos básicos que tiene una red social
-* Quiénes son los principales usuarios de producto
-* Cómo descubriste las necesidades de los usuarios
-* Qué problema resuelve el producto para estos usuarios
-* Cuáles son los objetivos de estos usuarios en relación con el producto
-* Cuáles son las principales funcionalidades del producto y cuál es su prioridad
-* Cómo verificaste que el producto les está resolviendo sus problemas
-* Cómo te asegurarás que estos usuarios usen este producto
+Elegimos como tema la educación universitaria porque en un centro de estudios como este es necesario estar en contacto con otros compañeros para realizar trabajos, con docentes para definir fechas y características de lostrabajos en casa, así como dudas que puedan surgir de los estudiantes, también la comunidad administrativa y de difusión estarían en contacto con los miembros del plantel para recordar sobre límites de pago y avisos. Pensamos que todo lo anterior sería más profesional si estos usuarios contaran con un medio de comunicación de estas características sin tener que recurrir a los teléfonos personales.
 
-Para poder llegar a estas definiciones te recomendamos ver: entrevistas con
-usuarios y tests de usabilidad.
+En nuestro caso, debido a que nuestros usuarios son variados (estudiantes, académicos, administrativos y directivos),desde el planteamiento del prototipo se buscó que fuera similar a la red de Facebook ya que la gran mayoría de las personas están familiarizadas con esta app móvil. Por lo tanto, los íconos y la estructura general pretende ser familiar para el usuario.
+
+Se realizó un prototipo de baja fidelidad https://www.figma.com/file/YUhRsbgzgrF751DuG2FYz0/Untitled?node-id=19%3A7
+y una encuesta https://docs.google.com/forms/d/1KINgzFx4rHqlHBUAKjfzHSXZhAhFUxc7RM6-DKD85gw/edit para conocer mejor las necesidades de los posibles usuarios.
 
 ### Historias de usuario
 
 Una vez que entiendas las necesidades de tu usuario, escribe las Historias de
 Usuario que representen todo lo que el usuario necesita hacer/ver. Asegúrate
 de incluir una definición de terminado (definition o done) para cada una.
+1. Los usuarios de la app requieren poder iniciar sesión para ingresar a la comunidad.
+Definition of done:
+- Crear el inicio de sesión con firebase para acceder a la siguiente página.
+2. Los usuarios de la app requieren autenticarse con facebook y gmail para ingresar a la app de forma más fácil y rápida.
+Definition of done:
+- Implementar autenticación con facebook.
+- Implementar autenticación de gmail.
+3. Los usuarios de la app requieren seguridad al ingresar sus correos y contraseñas.
+Definition of done:
+- Cubrir los caracteres del password.
+- Verificar que el correo electrónico no esté ya vinculado a una cuenta existente.
+- Añadir cierre de sesión.
+4. Los usuarios de la app requieren poder realizar publicaciones para comunicarse entre ellos.
+- Agregar publicaciones en el muro.
+- No permitir publicar posts vacíos.
+5. Los usuarios de la app requieren poder dar likes, estrellas o algún icono a las publicaciones.
+Definition of done:
+- Implementar likes para cada post realizado.
+- Llevar un conteo de los likes a cada post. 
+6. Los usuarios de la app requieren poder eliminar o editar sus publicaciones.
+Definition of done:
+- Editar publicaciones y almacenarlas con esos cambios.
+- Brindar la posibilidad de eliminar posts por el autor.
+7. Los usuarios de la app requieren poder filtrar sus publicaciones para mostrarlas a público o amigos.
+- Brindar la opción de mostrar a todo público o sólo a amigos cada vez que un post sea creado.
 
 ### Diseño de la Interfaz de Usuario (prototipo de baja fidelidad)
 
-Debes definir cuál será el flujo que seguirá el usuario dentro de tu producto y
-con eso deberás diseñar la Interfaz de Usuario (UI por sus siglas en inglés) de
-esta red social que siga este flujo.
-Este diseño debe representar la solución que se implementará finalmente en
-código.
+
+El prototipo de alta fidelidad se planteó para que el producto final fuese similar al formato y estilo de facebook para móvil, ya que es una red muy conocida y los usuarios ya están familiarizados con ella.
+
+![alt text](https://i.ibb.co/mh5sHCk/67916332-346249096282493-8611885615799074816-n.jpg)
+![alt text](https://i.ibb.co/g6Pr5kJ/68730180-900748293621841-3966325181718200320-n.jpg)
+
+Lo primero que se muestra es la pantalla de inicio de sesión o registro para crear una cuenta, una vez que el usuario ya tiene cuenta e inició sesión se pasa al muro donde encontrará las publicaciones recientes de su comunidad universitaria. También se planea poder acceder a distintos servicios mediante íconos en la parte superior; nueva publicación, perfil personal, búsqueda, grupos, notificaciones y mensajes. Por último para cada post el autor debe tener las opciones de eliminar, editar y seleccionar si desea que sea público o para amigos, asimismo cada publicación podría tener likes y comentarios.
 
 ### Responsive
 
@@ -104,72 +73,6 @@ Debe verse bien en dispositivos de pantallas grandes
 (computadoras/es, laptops, etc.) y pequeñas (tablets, celulares, etc.). Te
 sugerimos seguir la técnica de `mobile first` (más detalles sobre esta técnica
 al final).
-
-### Pruebas unitarias (unit tests)
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_,
-_lines_, y _branches_.
-
-### Implementación de la Interfaz de Usuario (UI y comportamiento de Interfaz de Usuario)
-
-La idea para este producto es que el producto a desarrollar siga los
-lineamientos propuestos en el diseño de la interfaz de usuario. Asegúrate a lo
-largo de la implementación que los elementos propuestos están siendo
-implementados correctamente.
-
-La interfaz debe permitir lo siguiente:
-
-#### Creación de cuenta de usuario e inicio de sesión
-
-* Login con Firebase:
-  - Para el login y las publicaciones en el muro puedes utilizar [Firebase](https://firebase.google.com/products/database/)
-  - Autenticación con Facebook y/o Google y/o Email.
-* Validaciones:
-  - No pueden haber usuarios repetidos.
-  - La cuenta de usuario debe ser un correo electrónico válido.
-  - Lo que se escriba en el campo (_input_) de contraseña debe ser secreto.
-* Comportamiento:
-  - Al enviarse un formulario de registro o inicio de sesión, debe validarse.
-  - En caso haya errores, el sistema debe mostrar mensajes de error para
-    ayudar al usuario a corregirlos.
-  - La aplicación solo permitirá el acceso a usuarios con cuentas válidas.
-  - Al recargar la aplicación, se debe verificar si el usuario está
-    logueado antes de mostrarle el contenido privado.
-* Perspectiva de interfaz:
-
-  ![Login](https://user-images.githubusercontent.com/9284690/40994765-c3cf9602-68c2-11e8-89ac-8254859b5ebb.png)
-
-#### Muro/timeline de la red social
-
-* Validaciones:
-  - Al apretar el botón de publicar, debe validar que exista contenido en el input.
-* Comportamiento:
-  - Poder publicar un post.
-  - Poder poner like a una publicación.
-  - Llevar un conteo de los likes.
-  - Poder eliminar un post específico.
-  - Poder filtrar los posts sólo para mis amigos y para todo público.
-  - Pedir confirmación antes de eliminar un post.
-  - Al darle click en el botón editar, debe cambiar el texto por un input que
-    permita editar el texto y cambiar el link por guardar.
-  - Al darle guardar debe cambiar de vuelta a un texto normal pero con la
-    información editada.
-  - Al recargar la página debo de poder ver los textos editados
-* Perspectiva de interfaz:
-
-  ![Muro](https://user-images.githubusercontent.com/9284690/40994768-c52c3442-68c2-11e8-99a5-9e127e700dee.png)
-
-#### Otras consideraciones
-
-* La aplicación no debe dejar hacer publicaciones vacías de ningun tipo.
-* El usuario debe poder agregar, editar y eliminar contenido de la red
-  social.
-* El usuario debe poder definir la privacidad de lo que publica.
-* Al editar contenido, el contenido editado se verá automáticamente,
-  inmediatamente después de guardar.
-* Al recargar la página se deben poder ver los contenidos editados.
-
-Personaliza estas guías con los colores y/o tipografías que creas convenientes.
 
 ### Hacker edition
 
@@ -205,8 +108,9 @@ Además, podrías agregar algunas tareas nuevas de acuerdo a tus decisiones:
 
 Desde el punto de vista de UX, deberás:
 
-* Hacer al menos 2 o 3 entrevistas con usuarios.
-* Hacer un  prototipo de baja fidelidad.
+* Se realizó una entrevista a usuarios.
+* Se realizó un  prototipo de baja fidelidad.
+* Se realizó un prototipo de alta fidelidad.
 * Hacer sesiones de testing con el producto en HTML.
 
 ### Habilidades Blandas
@@ -256,57 +160,6 @@ interfaz será desplegada usando GitHub pages u otro servicio de hosting que
 puedas haber encontrado en el camino.
 
 
-## Pistas / Tips / Lecturas complementarias
-
-### Mobile first
-
-El concepto de [_mobile first_](https://www.mediaclick.es/blog/diseno-web-responsive-design-y-la-importancia-del-mobile-first/)
-hace referencia a un proceso de diseño y desarrollo donde partimos de cómo se ve
-y cómo funciona la aplicación en un dispositivo móvil primero, y más adelante se
-ve como adaptar la aplicación a pantallas progresivamente grandes y
-características específicas del entorno desktop. Esto es en contraposición al
-modelo tradicional, donde primero se diseñaban los websites (o webapps) para
-desktop y después se trataba de _arrugar_ el diseño para que entre en pantallas
-más chicas. La clave acá es asegurarse de que desde el principio diseñan usando
-la vista _responsive_ de las herramientas de desarrollador (developer tools) del
-navegador. De esa forma, partimos de cómo se ve y comporta la aplicación en una
-pantalla y entorno móvil.
-
-### Múltiples vistas y Single-page Applications (SPAs)
-
-En proyectos anteriores nuestras aplicaciones habían estado compuestas de una
-sola _vista_ principal (una sóla _página_). En este proyecto se introduce la
-necesidad de tener que dividir nuestra interfaz en varias _vistas_ o _páginas_
-y ofrecer una manera de navegar entre estas vistas. Este problema se puede
-afrontar de muchas maneras: con archivos HTML independientes (cada uno con su
-URL) y links tradicionales, manteniendo estado en memoria y rederizando
-condicionalmente (sin refrescar la página), [manipulando el historial del
-navegador](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
-con [`window.history`](https://developer.mozilla.org/es/docs/Web/API/Window/history),
-o usando algun Library de Routing del cual puedes preguntarle a tus coachxs.
-En este proyecto te invitamos a explorar opciones y decidir una opción
-de implementación.
-
-### Escritura de datos
-
-En los proyectos anteriores hemos consumido (leído) datos, pero todavía no
-habíamos escrito datos (salvar cambios, crear datos, borrar, ...). En este
-proyecto tendrás que crear (salvar) nuevos datos, así como leer, actualizar y
-modificar datos existentes. Estos datos se podrán guardar de forma remota
-usando [Firebase](https://firebase.google.com/).
-
-Otras:
-
-* [Modulos: Export](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export)
-* [Modulos: Import](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import)
-* [Diseño web, responsive design y la importancia del mobile first - Media Click](https://www.mediaclick.es/blog/diseno-web-responsive-design-y-la-importancia-del-mobile-first/)
-* [Mobile First: el enfoque actual del diseño web móvil - 1and1](https://www.1and1.es/digitalguide/paginas-web/diseno-web/mobile-first-la-nueva-tendencia-del-diseno-web/)
-* [Mobile First - desarrolloweb.com](https://desarrolloweb.com/articulos/mobile-first-responsive.html)
-* [Mobile First - ZURB](https://zurb.com/word/mobile-first)
-* [Mobile First Is NOT Mobile Only - Nielsen Norman Group](https://www.nngroup.com/articles/mobile-first-not-mobile-only/)
-
-***
-
 ## Checklist
 
 ### General
@@ -315,9 +168,9 @@ Otras:
 
 ### `README.md`
 
-* [ ] Definición del producto
-* [ ] Resumen de entrevistas con usuarios.
-* [ ] Link/screenshots prototipo de baja fidelidad.
+* [✔] Definición del producto
+* [✔] Resumen de entrevistas con usuarios.
+* [✔] Link/screenshots prototipo de baja fidelidad.
 * [ ] Conclusiones de pruebas con el producto en HTML.
 
 ### Pruebas / tests
@@ -328,22 +181,22 @@ Otras:
 
 ### Creación de cuenta (sign up)
 
-* [ ] Permite crear cuenta.
-* [ ] Valida email.
-* [ ] Valida password.
-* [ ] Muestra mensajes de error.
+* [✔] Permite crear cuenta.
+* [✔] Valida email.
+* [✔] Valida password.
+* [✔] Muestra mensajes de error.
 
 ### Inicio de sesión (sign in)
 
-* [ ] Permite iniciar sesión.
-* [ ] Valida email.
-* [ ] Valida password.
-* [ ] Muestra mensajes de error.
+* [✔] Permite iniciar sesión.
+* [✔] Valida email.
+* [✔] Valida password.
+* [✔] Muestra mensajes de error.
 
 ### Muro (wall/feed)
 
-* [ ] Muestra _muro_, o lista de publicaciones.
-* [ ] Permite hacer nuevas publicaciones.
+* [✔ ] Muestra _muro_, o lista de publicaciones.
+* [✔] Permite hacer nuevas publicaciones.
 * [ ] Permite eliminar publicaciones.
 * [ ] Pide confirmación antes de borrar publicación.
 * [ ] Permite editar publicación en el mismo lugar (in place).
